@@ -14,12 +14,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		25977FE01BFB7C150024830F /* RSSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25977FE01BFB7C150024830F /* Get-WIFI-Strength-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get-WIFI-Strength-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25977FE31BFB7C150024830F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25977FE51BFB7C150024830F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25977FE71BFB7C150024830F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25977FEA1BFB7C150024830F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25977FEC1BFB7C150024830F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259CB5391BFC606D00512959 /* RSSI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSI-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +45,7 @@
 		25977FE11BFB7C150024830F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25977FE01BFB7C150024830F /* RSSI.app */,
+				25977FE01BFB7C150024830F /* Get-WIFI-Strength-swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +58,7 @@
 				25977FE71BFB7C150024830F /* Assets.xcassets */,
 				25977FE91BFB7C150024830F /* Main.storyboard */,
 				25977FEC1BFB7C150024830F /* Info.plist */,
+				259CB5391BFC606D00512959 /* RSSI-Bridging-Header.h */,
 			);
 			path = RSSI;
 			sourceTree = "<group>";
@@ -64,9 +66,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		25977FDF1BFB7C150024830F /* RSSI */ = {
+		25977FDF1BFB7C150024830F /* Get-WIFI-Strength-swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25977FEF1BFB7C150024830F /* Build configuration list for PBXNativeTarget "RSSI" */;
+			buildConfigurationList = 25977FEF1BFB7C150024830F /* Build configuration list for PBXNativeTarget "Get-WIFI-Strength-swift" */;
 			buildPhases = (
 				25977FDC1BFB7C150024830F /* Sources */,
 				25977FDD1BFB7C150024830F /* Frameworks */,
@@ -76,9 +78,9 @@
 			);
 			dependencies = (
 			);
-			name = RSSI;
+			name = "Get-WIFI-Strength-swift";
 			productName = RSSI;
-			productReference = 25977FE01BFB7C150024830F /* RSSI.app */;
+			productReference = 25977FE01BFB7C150024830F /* Get-WIFI-Strength-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 25977FDB1BFB7C150024830F /* Build configuration list for PBXProject "RSSI" */;
+			buildConfigurationList = 25977FDB1BFB7C150024830F /* Build configuration list for PBXProject "Get-WIFI-Strength-swift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -109,7 +111,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				25977FDF1BFB7C150024830F /* RSSI */,
+				25977FDF1BFB7C150024830F /* Get-WIFI-Strength-swift */,
 			);
 		};
 /* End PBXProject section */
@@ -234,11 +236,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RSSI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.genii.RSSI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Get-WIFI-Strength-swift";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSI/RSSI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -246,18 +251,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = RSSI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.genii.RSSI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Get-WIFI-Strength-swift";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSI/RSSI-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25977FDB1BFB7C150024830F /* Build configuration list for PBXProject "RSSI" */ = {
+		25977FDB1BFB7C150024830F /* Build configuration list for PBXProject "Get-WIFI-Strength-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25977FED1BFB7C150024830F /* Debug */,
@@ -266,13 +273,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25977FEF1BFB7C150024830F /* Build configuration list for PBXNativeTarget "RSSI" */ = {
+		25977FEF1BFB7C150024830F /* Build configuration list for PBXNativeTarget "Get-WIFI-Strength-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25977FF01BFB7C150024830F /* Debug */,
 				25977FF11BFB7C150024830F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
